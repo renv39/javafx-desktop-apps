@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" spacing="20.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.rendellvelasco.fleettracker.controllers.SummaryController">
+    <children>
+        <Label fx:id="summaryLabel" text="Summary">
+            <font>
+                <Font size="24.0" />
+            </font>
+        </Label>
+        <ChoiceBox fx:id="summaryChoiceBox" prefWidth="150.0" />
+      <StackPane>
+         <children>
+              <!-- Vehicles Table -->
+              <TableView fx:id="vehicleTableView" prefHeight="200" prefWidth="600">
+                  <columns>
+                      <TableColumn fx:id="makeColumn" text="Make" />
+                      <TableColumn fx:id="modelColumn" text="Model" />
+                      <TableColumn fx:id="yearColumn" text="Year" />
+                      <TableColumn fx:id="typeColumn" text="Type" />
+                  </columns>
+               <columnResizePolicy>
+                  <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+               </columnResizePolicy>
+              </TableView>
+
+              <!-- Usage Table -->
+              <TableView fx:id="usageTableView" prefHeight="200" prefWidth="600">
+                  <columns>
+                      <TableColumn fx:id="usageVehicleColumn" text="Vehicle" />
+                      <TableColumn fx:id="startDateColumn" text="Start Date" />
+                      <TableColumn fx:id="endDateColumn" text="End Date" />
+                      <TableColumn fx:id="distanceColumn" text="Distance" />
+                  </columns>
+               <columnResizePolicy>
+                  <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+               </columnResizePolicy>
+              </TableView>
+
+              <!-- Maintenance Table -->
+              <TableView fx:id="maintenanceTableView" prefHeight="200" prefWidth="600">
+                  <columns>
+                      <TableColumn fx:id="maintenanceVehicleColumn" minWidth="80.0" prefWidth="-1.0" text="Vehicle" />
+                      <TableColumn fx:id="maintenanceDateColumn" minWidth="80.0" prefWidth="-1.0" text="Date" />
+                      <TableColumn fx:id="costColumn" minWidth="80.0" prefWidth="-1.0" text="Cost" />
+                      <TableColumn fx:id="descriptionColumn" minWidth="80.0" prefWidth="-1.0" text="Description" />
+                  </columns>
+               <columnResizePolicy>
+                  <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+               </columnResizePolicy>
+              </TableView>
+         </children>
+      </StackPane>
+        <Button fx:id="summaryButton" mnemonicParsing="false" text="Close Summary" />
+    </children>
+    <padding>
+        <Insets bottom="10.0" left="20.0" right="20.0" top="10.0" />
+    </padding>
+</VBox>
