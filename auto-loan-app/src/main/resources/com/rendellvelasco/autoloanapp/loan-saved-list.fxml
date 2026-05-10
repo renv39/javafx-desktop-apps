@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.rendellvelasco.autoloanapp.controllers.LoanSavedListController">
+   <children>
+      <ListView fx:id="loanListView" prefHeight="900.0" prefWidth="1400.0" />
+   </children>
+</Pane>

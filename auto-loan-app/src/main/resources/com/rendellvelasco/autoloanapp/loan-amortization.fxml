@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane prefHeight="900.0" prefWidth="1400.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.rendellvelasco.autoloanapp.controllers.LoanAmortizationController">
+   <children>
+      <TableView fx:id="amortizationTable" layoutX="437.0" layoutY="177.0" prefHeight="546.0" prefWidth="527.0" style="-fx-border-color: black;">
+        <columns>
+            <TableColumn fx:id="monthCol" prefWidth="75.0" text="Month" />
+          <TableColumn fx:id="principalCol" prefWidth="75.0" text="Principal" />
+          <TableColumn fx:id="interestCol" prefWidth="75.0" text="Interest" />
+            <TableColumn fx:id="balanceCol" prefWidth="75.0" text="Balance" />
+        </columns>
+      </TableView>
+   </children>
+</Pane>

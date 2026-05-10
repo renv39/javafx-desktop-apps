@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox spacing="5.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1"
+fx:controller="com.rendellvelasco.autoloanapp.controllers.CustomerController">
+    <Label text="Customer">
+        <font>
+            <Font size="24.0" />
+        </font>
+    </Label>
+    <GridPane alignment="TOP_RIGHT" layoutX="10.0" layoutY="10.0" vgap="30.0">
+        <columnConstraints>
+            <ColumnConstraints minWidth="10.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+        <children>
+            <Label alignment="TOP_LEFT" text="Name" GridPane.halignment="RIGHT" />
+            <Label text="Phone" GridPane.halignment="RIGHT" GridPane.rowIndex="1" />
+            <Label text="City" GridPane.columnIndex="2" GridPane.halignment="RIGHT" />
+            <Label text="Province" GridPane.columnIndex="2" GridPane.halignment="RIGHT" GridPane.rowIndex="1" />
+            <TextField fx:id="phoneTextField" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                <GridPane.margin>
+                    <Insets left="5.0" />
+                </GridPane.margin>
+            </TextField>
+            <TextField fx:id="nameTextField" GridPane.columnIndex="1">
+                <GridPane.margin>
+                    <Insets left="5.0" />
+                </GridPane.margin>
+            </TextField>
+            <TextField fx:id="cityTextField" GridPane.columnIndex="3">
+                <GridPane.margin>
+                    <Insets left="5.0" />
+                </GridPane.margin>
+            </TextField>
+            <ChoiceBox fx:id="provinceChoiceBox" prefWidth="150.0" GridPane.columnIndex="3" GridPane.rowIndex="1">
+                <GridPane.margin>
+                    <Insets left="5.0" />
+                </GridPane.margin>
+            </ChoiceBox>
+        </children>
+    </GridPane>
+</VBox>

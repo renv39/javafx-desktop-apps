@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox alignment="CENTER" style="-fx-border-color: black;" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.rendellvelasco.autoloanapp.controllers.HomepageController">
+    <children>
+        <Label prefHeight="105.0" prefWidth="235.0" text="Homepage">
+            <font>
+                <Font size="48.0" />
+            </font>
+        </Label>
+        <HBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="343.0" prefWidth="600.0" spacing="100.0">
+            <children>
+                <Button fx:id="loginButton" mnemonicParsing="false" onAction="#onClickLoginButton" text="Login">
+                    <font>
+                        <Font size="24.0" />
+                    </font>
+                </Button>
+                <Button fx:id="signUpButton" mnemonicParsing="false" onAction="#onClickSignUpButton" text="Sign Up">
+                    <font>
+                        <Font size="24.0" />
+                    </font>
+                </Button>
+            </children>
+        </HBox>
+    </children>
+    <padding>
+        <Insets top="20.0" />
+    </padding>
+</VBox>
