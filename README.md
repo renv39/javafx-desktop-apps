@@ -34,7 +34,7 @@ Java · JavaFX · FXML · Scene Builder · Google Guice · SQLite · JDBC · BCr
 
 Workshops 1–2 build **foundational Java and JavaFX skills**: OOP hierarchies, interfaces, multi-window apps, and the service layer pattern.
 
-Workshops 3–7 develop a **complete auto loan application** across two phases: first with manual DI, MVC, and in-memory storage, then upgraded with Guice IoC, SQLite persistence, BCrypt security, and file I/O.
+Workshops 3, 6-7 develop a **complete auto loan application** across two phases: first with manual DI, MVC, and in-memory storage, then upgraded with Guice IoC, SQLite persistence, BCrypt security, and file I/O.
 
 Workshops 4–5 tackle a **separate domain** (project staffing) with a DI framework, abstract models, reactive bindings, and business rule enforcement.
 
